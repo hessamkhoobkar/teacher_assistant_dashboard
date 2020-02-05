@@ -1,0 +1,19 @@
+.bookcover {
+    // 1.4142
+    height: 452.5px;
+    width: 320px;
+    padding-right: $spacer;
+    padding-left: $spacer;
+    padding-top: calc(#{$spacer} * 3);
+    padding-bottom: calc(#{$spacer} * 3);
+    background-color: $white;
+    border-radius: $border-radius-lg;
+    box-shadow: $box-shadow;
+    border-bottom: 4px solid $primary;
+    cursor: pointer;
+    transition: $transition-base;
+    
+    &:hover {
+        box-shadow: $box-shadow-lg;
+    }
+}

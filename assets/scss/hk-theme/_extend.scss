@@ -1,0 +1,27 @@
+.btn-primary {
+    color: #ffffff;
+}
+
+.btn {
+
+    & .fas {
+        padding-inline-start: 1rem;
+    }
+    
+    &:hover {
+        
+        & .fas {
+            padding-inline-start: 1rem;
+            margin-inline-start: 1rem;
+        }
+    }
+}
+
+.fas {
+    transition: $transition-base;
+}
+
+#quick-action__continue {
+    border-radius: .5rem;
+    border: 1.5px dashed $border-color; 
+}

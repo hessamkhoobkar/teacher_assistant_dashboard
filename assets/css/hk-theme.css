@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import "../fonts/fontawesome/css/fontawesome.min.css";
+@import "../fonts/fontawesome/css/solid.min.css";
 :root {
   --blue: #006fbb;
   --indigo: #5c6ac4;
@@ -7285,15 +7287,15 @@ button.bg-dark:focus {
 }
 
 .shadow-sm {
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  box-shadow: 0 1px 0 0 rgba(22, 29, 37, 0.05) !important;
 }
 
 .shadow {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15) !important;
 }
 
 .shadow-lg {
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  box-shadow: 0 0 0 1px rgba(6, 44, 82, 0.1), 0 2px 16px rgba(33, 43, 54, 0.08) !important;
 }
 
 .shadow-none {
@@ -9868,6 +9870,44 @@ h3 {
     color: inherit;
     border-color: #dfe3e8;
   }
+}
+.btn-primary {
+  color: #ffffff;
+}
+
+.btn .fas {
+  padding-inline-start: 1rem;
+}
+.btn:hover .fas {
+  padding-inline-start: 1rem;
+  margin-inline-start: 1rem;
+}
+
+.fas {
+  transition: all 0.2s ease-in-out;
+}
+
+#quick-action__continue {
+  border-radius: 0.5rem;
+  border: 1.5px dashed #dfe3e8;
+}
+
+.bookcover {
+  height: 452.5px;
+  width: 320px;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: calc(1rem * 3);
+  padding-bottom: calc(1rem * 3);
+  background-color: white;
+  border-radius: 0.3rem;
+  box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);
+  border-bottom: 4px solid #47c1bf;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.bookcover:hover {
+  box-shadow: 0 0 0 1px rgba(6, 44, 82, 0.1), 0 2px 16px rgba(33, 43, 54, 0.08);
 }
 
 /*# sourceMappingURL=hk-theme.css.map */

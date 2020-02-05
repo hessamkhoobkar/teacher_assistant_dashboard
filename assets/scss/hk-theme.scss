@@ -1,5 +1,14 @@
+//  Base functions
  @import "core-bootstrap/functions";
+
+// My Custom variables
  @import "hk-theme/variables";
+
+// fontawesome
+ @import "../fonts/fontawesome/css/fontawesome.min.css";
+ @import "../fonts/fontawesome/css/solid.min.css";
+
+//  Core bootstrap files
  @import "core-bootstrap/mixins";
  @import "core-bootstrap/root";
  @import "core-bootstrap/reboot";
@@ -35,4 +44,10 @@
  @import "core-bootstrap/spinners";
  @import "core-bootstrap/utilities";
  @import "core-bootstrap/print";
+
+// Extanding core
+@import "hk-theme/extend";
+
+//  Components 
+ @import "hk-theme/bookcovers";
  
