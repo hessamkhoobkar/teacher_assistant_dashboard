@@ -1,0 +1,25 @@
+.quiz-card {
+    padding: $spacer;
+    background-color: $white;
+    border-radius: $border-radius-lg;
+    box-shadow: $box-shadow;
+    cursor: pointer;
+    transition: $transition-base;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &:hover {
+        box-shadow: $box-shadow-lg;
+    }
+
+    & .fas {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    &:hover {
+        color: $primary;
+    }
+}

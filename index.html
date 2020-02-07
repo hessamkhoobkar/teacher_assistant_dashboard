@@ -7,41 +7,45 @@
     <title>teacher_assistant</title>
 
     <link rel="stylesheet" href="assets/css/hk-theme-uikit.css" />
-    <link rel="stylesheet" href="./assets/css/hk-theme.css">
+    <link rel="stylesheet" href="assets/css/hk-theme.css">
 </head>
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand p-0" href="#">
+            <img class="logo" src="assets/img/logo.png" height="32" alt="Pieridae">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse mr-auto" id="navbarSupportedContent">
-            <ul class="navbar-nav">
+        <div class="collapse navbar-collapse mx-auto" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
                 <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
+                    <a class="nav-link" href="#">HomeWorks</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    <a class="nav-link" href="#">Exams</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">File manager</a>
                 </li>
             </ul>
         </div>
         <ul class="navbar-nav action-center">
+            <li class="nav-item">
+                <button class="btn" type="button">
+                    <i class="fas fa-life-ring"></i>
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="btn" type="button">
+                    <i class="fas fa-comments"></i>
+                </button>
+            </li>
             <li class="nav-item">
                 <button class="btn" type="button">
                     <i class="fas fa-bell"></i>
@@ -49,14 +53,13 @@
             </li>
             <li class="nav-item dropdown">
                 <a class="user-action" href="#" id="useraction" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    hessam khoobkar
                     <img class="avatar rounded-circle" src="assets/img/hessamkhoobkar.jpg" alt="hessam khoobkar avatar">
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="useraction">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Profile</a>
+                    <a class="dropdown-item" href="#">Setting</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Exit</a>
                 </div>
             </li>
         </ul>
@@ -64,19 +67,19 @@
 
     <section id="quick-action">
         <div class="container-fluid bg-light">
-            <div class="row p-5">            
+            <div class="row p-5 align-items-center">            
                 <div id="quick-action__continue" class="col p-5">
                     <div class="row align-items-center">
                         <div class="col">                            
                             <div class="bookcover">
-                                <h3>Definite and indefinite articles</h3>
-                                <p>Lorem ipsum dolor sit amet.</p>
+                                <h6>Chapter 2</h6>
+                                <h3>Perfect and perfect progressive tenses</h3>  
                             </div>
                         </div>
                         <div class="col p-1">
                             <h2>Continue reading</h2>
-                            <p>Phrasal Phrasal verbs 3 out - Page 139</p>
-                            <button class="btn btn-primary" type="button">
+                            <p>2-3 Present Perfect: Since and For</p>
+                            <button class="btn btn-primary btn-custom" type="button">
                                 Continue reading
                                 <i class="fas fa-chevron-right fa-sm"></i>           
                             </button>
@@ -84,20 +87,60 @@
                     </div>
                 </div>
                 <div id="quick-action__quiz" class="col p-5">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel dolore magni distinctio nemo quidem itaque esse natus iste. Eum culpa repellendus est iusto, quo ut odit illum nulla. Excepturi, dicta?</p>
+                    <div class="pb-2">
+                        <h2>Quick quizzes</h2>
+                        <p>Ready for some challenges?</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 mb-4">  
+                            <div class="quiz-card">
+                                <div class="info">
+                                    <h5>The chapter's quiz</h5>
+                                    <p class="m-0">Take a quiz on current chapter </p>
+                                </div>
+                                <i class="fas fa-chevron-right fa-lg"></i>
+                            </div>  
+                        </div>
+                        <div class="col-6 mb-4">  
+                            <div class="quiz-card">
+                                <div class="info">
+                                    <h5>Unlock next level</h5>
+                                    <p class="m-0">Take a quiz to unlock next level </p>
+                                </div>
+                                <i class="fas fa-chevron-right fa-lg"></i>
+                            </div>  
+                        </div>
+                        <div class="col-6 mb-4">  
+                            <div class="quiz-card">
+                                <div class="info">
+                                    <h5>Overall score</h5>
+                                    <p class="m-0">Take a quiz to revalue your level</p>
+                                </div>
+                                <i class="fas fa-chevron-right fa-lg"></i>
+                            </div>  
+                        </div>
+                        <div class="col-6 mb-4">  
+                            <div class="quiz-card">
+                                <div class="info">
+                                    <h5>Practise your knowledge</h5>
+                                    <p class="m-0">Practise on your knowledge</p>
+                                </div>
+                                <i class="fas fa-chevron-right fa-lg"></i>
+                            </div>  
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="quick-action">
-        <div class="container-fluid">
-            <div class="row p-5"> 
-                <div class="col">                            
-                    <h2>Understanding and Using English Grammar</h2>  
-                    <p>by Betty S. Azar (Author), Stacy A. Hagen (Author) - Fifth Edition</p>
-                </div>
-                <div class="w-100"></div>    
+    <section id="active-book">
+        <div class="container-fluid p-5">
+            <div class="w-100 mb-4">                            
+                <h2>Understanding and Using English Grammar</h2>  
+                <p>by Betty S. Azar (Author), Stacy A. Hagen (Author) - Fifth Edition</p>
+            </div>
+            <div class="row flex-nowrap online-carousell">    
                 <div class="col">                            
                     <div class="bookcover">
                         <h6>Chapter 2</h6>
@@ -126,6 +169,30 @@
                     <div class="bookcover">
                         <h6>Chapter 6</h6>
                         <h3>Nouns</h3>                        
+                    </div>
+                </div>
+                <div class="col">                            
+                    <div class="bookcover">
+                        <h6>Chapter 7</h6>
+                        <h3>Articles</h3>                        
+                    </div>
+                </div>
+                <div class="col">                            
+                    <div class="bookcover">
+                        <h6>Chapter 8</h6>
+                        <h3>Pronouns</h3>                        
+                    </div>
+                </div>
+                <div class="col">                            
+                    <div class="bookcover">
+                        <h6>Chapter 9</h6>
+                        <h3>Modals, part 1</h3>                        
+                    </div>
+                </div>
+                <div class="col">                            
+                    <div class="bookcover">
+                        <h6>Chapter 10</h6>
+                        <h3>Modals, part 2</h3>                        
                     </div>
                 </div>
             </div>
